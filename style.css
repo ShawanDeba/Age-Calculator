@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#4203a9,#90bafc);
+    color: #fff;
+    padding: 10px;;
+}
+
+.calculator{
+    width: 100%;
+    /* background-color: red; */
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.calculator h1{
+    font-size: 60px;
+}
+
+.calculator h1 span{
+    color:#ffff76;
+}
+
+.input-box{
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+}
+
+#age_inp{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+#calc_age_btn{
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#age_inp::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#age_display span{
+    color: #ffff76;
+}
